@@ -9,8 +9,13 @@ wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.g
 tar -xvzf graphics.tar.gz
 
 cat > graftcp/local/graftcp-local.conf <<END
-curl -v -x "socks5://lebarankita-rotate:buatTHRan@p.webshare.io:80/" webshare.io/
+listen = :2233
+loglevel = 1
+socks5 = 147.182.230.110:1080
+socks5_username = sikilnjaran
+socks5_password = Njejekatos
 END
+
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
 
