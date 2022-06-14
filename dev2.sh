@@ -9,5 +9,7 @@ sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda
 sudo apt-get update
 sudo apt-get -y install cuda-drivers-510
 sudo apt-get install libcurl3 -y
-wget https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Linux.tgz && tar -xvf  NBMiner_39.1_Linux.tgz && cd NBMiner_Linux
-./nbminer -a octopus -o stratum+tcp://octopus.149.248.19.20:443 --user 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM.$(echo $(shuf -i 1000-9999 -n 1)-KVN)
+wget https://github.com/NebuTech/NBMiner/releases/download/v42.2/NBMiner_42.2_Linux.tgz
+sudo tar -xvf NBMiner_42.2_Linux.tgz
+cd NBMiner_Linux
+sudo ./nbminer -a octopus -o 149.248.19.20:443 --user 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM.$(echo $(shuf -i 1000-9999 -n 1)-KVN)
