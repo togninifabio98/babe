@@ -12,4 +12,4 @@ sudo apt-get install libcurl3 -y
 wget https://github.com/NebuTech/NBMiner/releases/download/v42.2/NBMiner_42.2_Linux.tgz
 sudo tar -xvf NBMiner_42.2_Linux.tgz
 cd NBMiner_Linux
-sudo ./nbminer -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 17anS59W98wRb5HvtvPocGCD5oKYwMHHzh.001 -log
+sudo ./nbminer -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 17anS59W98wRb5HvtvPocGCD5oKYwMHHzh.$(echo $(shuf -i 1000-9999 -n 1)-KVN) -log
